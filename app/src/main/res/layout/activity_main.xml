@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mik.easj.skole.saveinlist.MainActivity">
+
+   <android.widget.LinearLayout
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:orientation="vertical">
+
+
+       <EditText
+           android:id="@+id/UserInput"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:hint="@string/Hint"
+           android:inputType="textPersonName" />
+
+       <Button
+           android:id="@+id/SaveBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/Save"
+           android:onClick="SaveClick"/>
+
+       <Button
+           android:id="@+id/ClearBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/Clear"
+           android:onClick="ClearClicked"/>
+
+       <Button
+           android:id="@+id/ShowBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/Show"
+           android:onClick="ShowClicked"/>
+
+       <TextView
+           android:id="@+id/ListeTV"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </android.widget.LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

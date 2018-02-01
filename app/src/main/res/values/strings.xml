@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SaveInList</string>
+    <string name="Save">Save</string>
+    <string name="Clear">Clear</string>
+    <string name="Show">Show</string>
+    <string name="Hint">Type somehting</string>
+</resources>
