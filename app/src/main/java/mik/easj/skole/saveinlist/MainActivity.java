@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +27,15 @@ public class MainActivity extends AppCompatActivity {
         EditText UserInput = (EditText) findViewById(R.id.UserInput);
         OrdListe.add(UserInput.getText().toString());
         UserInput.setText("");
+        Toast toast = Toast.makeText(this, "Word saved", Toast.LENGTH_SHORT);
+        toast.show();
+
     }
 
     public void ClearClicked(View view) {
-        OrdListe.clear();
+        TextView _TextView = (TextView) findViewById(R.id.ListeTV);
+                OrdListe.clear();
+                _TextView.setText("");
     }
 
     public void ShowClicked(View view) {
